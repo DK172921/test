@@ -7,7 +7,7 @@ pool:
 steps:
 - script: |
     echo "Setting MAVEN_HOME"
-    echo "##vso[task.setvariable variable=MAVEN_HOME]/home/dhineshkumar1729/myagent/apache-maven-3.6.3"
+    echo "##vso[task.setvariable variable=MAVEN_HOME]/usr/share/maven"
     echo "Adding Maven bin to PATH"
     echo "##vso[task.prependpath]$(MAVEN_HOME)/bin"
   displayName: 'Set MAVEN_HOME and add to PATH'
